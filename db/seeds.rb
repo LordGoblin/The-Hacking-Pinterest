@@ -5,11 +5,3 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
-require 'faker'
-i = 0
-20.times do
-
-  com = Commentaire.create!(user_id: rand(1..5), content: Faker::FamilyGuy.quote, pin_id: rand(1..10))
-
-end
